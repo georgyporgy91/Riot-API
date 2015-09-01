@@ -1,6 +1,9 @@
 #rm(list=ls())
 
 library(shiny)
+library(ggplot2)
+library(reshape2)
+library(scales)
 
 dataPre <- read.csv("data/RequestData.csv")
 dataPost <- read.csv("data/RequestData_post.csv")

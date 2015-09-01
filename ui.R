@@ -66,7 +66,8 @@ shinyUI(fluidPage(
 		is more diverse. So formally, we define 'item diversity' as a decrease in variance of item distribution
 		over the entire population of items."),
 		p("An implicit assumption that we made is that the resulting item distribution should be viewed
-		by champion subsets, instead of as a whole. This is to avoid the possible misleading results due to Simpson's Paradox."),
+		by champion subsets, instead of as a whole. This is to avoid the possible misleading results due to", 
+		a("Simpson's Paradox.", href="https://en.wikipedia.org/wiki/Simpson%27s_paradox")),
 		p("The first step in the analysis is to clean the data so that it's in a usable form. This involves
 		evaluating failed requests, removing empty slots, trinkets, and items that existed in 5.11 but
 		not in 5.14 and vice versa. Then items in all slots, in all games, 

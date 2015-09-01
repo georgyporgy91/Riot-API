@@ -119,7 +119,7 @@ shinyUI(fluidPage(
 		more easily. However, this approach would prevent us from observing any secondary effect of the AP item change, such as an increase in 
 		popularity of other AP items, of a trend of building AD items on mages (for whatever reason?). Secondly, the data could have been
 		cleaned up even more, in that intermediary items such as blasting wand and early game items like Doran's ring could be removed
-		from our distributional analysis, as we are mostly interestd in what the core item selections would be. And finally, ranked data
+		from our distributional analysis, as we are mostly interested in what the core item selections would be. And finally, ranked data
 		and regional data could offer more insight to this question of item diversity."),
 		p("All in all, I think the patch was successful, in that it helped some champions to have a more varied set of 
 		item choices. However, the impact of it wasn't as great as expected, since AD champions also observed a 

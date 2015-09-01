@@ -1,6 +1,6 @@
 library(shiny)
 
-championMapping <- read.csv("championMapping.csv")
+championMapping <- read.csv("data/championMapping.csv")
 championList <- as.character(championMapping$championName)
 championList <- championList[order(championList)]
 

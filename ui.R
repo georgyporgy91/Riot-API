@@ -49,9 +49,9 @@ shinyUI(fluidPage(
 		p("The data used in this analysis were gathered from the Riot API using the 'jsonlite' 
 		package. The requested items are stored in the following four files. Due to the time constraint,
 		only 5x5 normal data for 'NA' server was analyzed."),
-		p("'RequestData.csv'- 5.11 data for 5x5 Normal in 'NA' server, including matchId, region,	queueType, patch,	side,	
+		p("'RequestData.csv'- 5.11 data for 5x5 Normal in 'NA' server, including", em("matchId, region,	queueType, patch,	side,	
 		champion,	rank,	role,	lane,	item0, item1, item2, item3, item4, item5, item6,
-		and winner"),
+		and winner")),
 		p("'RequestDataPost.csv'- 5.14 data for 5x5 Normal in 'NA' server, same attributes as above"),
 		p("'championMapping.csv'- champion data, including champion ID, champion name, and
 		whether it is AD or AP (a crude methodology was applied for this categorization-

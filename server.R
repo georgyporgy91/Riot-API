@@ -1,7 +1,5 @@
 #rm(list=ls())
 
-setwd("")
-
 dataPre <- read.csv("RequestData.csv")
 dataPost <- read.csv("RequestData_post.csv")
 championMapping <- read.csv("championMapping.csv")

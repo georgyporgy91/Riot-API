@@ -1,4 +1,3 @@
-setwd("")
 
 championMapping <- read.csv("championMapping.csv")
 championList <- as.character(championMapping$championName)

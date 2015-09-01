@@ -88,7 +88,7 @@ shinyServer(
 	aes(x=reorder(itemName, -FreqScaled), y=FreqScaled, fill=patch)+
 	geom_hline(yintercept=1/nrow(freqPost_sub)) + 
 	theme(axis.text.x=element_text(angle=90, size=10, vjust=0.5)) +
-	labs(title=paste("Item distribution for ",input$champion, " before and after patch 5.13"), x="Item by popularity", y="Item frequency in %")
+	labs(title=paste("Item frequency distribution for ",input$champion, " in 5.11 and 5.14"), x="Item by popularity", y="Scaled item frequency")
 	})
 
 

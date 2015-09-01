@@ -2,6 +2,7 @@
 Riot API Challenge II
 
 You may access the anlaysis using one of the two ways:
+
 1) website link: gwang.shinyapps.io/RitoAPI
 
 2) accessing using R:

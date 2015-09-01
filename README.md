@@ -7,6 +7,10 @@ if (!require('shiny')) install.packages("shiny")
 
 shiny::runGitHub('Riot-API', 'georgyporgy91')
 
+
+
+Data
+
 The data used in this analysis were gathered from the Riot API using the 'jsonlite' package. The requested items are stored in the following four files. Due to the time constraint, only 5x5 normal data for 'NA' server was analyzed.
 
 'RequestData.csv'- 5.11 data for 5x5 Normal in 'NA' server, including matchId, region,	queueType, patch,	side,	champion,	rank,	role,	lane,	item0, item1, item2, item3, item4, item5, item6, and winner

@@ -2,10 +2,10 @@
 
 library(shiny)
 
-dataPre <- read.csv("RequestData.csv")
-dataPost <- read.csv("RequestData_post.csv")
-championMapping <- read.csv("championMapping.csv")
-itemMapping <- read.csv("itemMapping.csv")
+dataPre <- read.csv("data/RequestData.csv")
+dataPost <- read.csv("data/RequestData_post.csv")
+championMapping <- read.csv("data/championMapping.csv")
+itemMapping <- read.csv("data/itemMapping.csv")
 
 
 #merge data

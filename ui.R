@@ -15,7 +15,8 @@ shinyUI(fluidPage(
         	label = "Choose a champion to display",
         	choices = championList),
     		
-		p("The following graph shows the item distribution (by popularity) for patch 5.11 and 5.14, as a percentage of all items purchased."),
+		p("The following graph shows the item frequency distribution (by popularity) for patch 5.11 and 5.14. Note that the frequencies
+		are scaled over all items purchased so that the sum of item frequencies add up to 1."),
 
 		plotOutput("graph1"),
 		br(),

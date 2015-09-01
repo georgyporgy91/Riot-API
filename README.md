@@ -1,7 +1,7 @@
 # Riot-API
 Riot API Challenge
 
-Use the following code to run app
+Use the following code to run the app
 
 ```s
 if (!require('shiny')) install.packages("shiny")

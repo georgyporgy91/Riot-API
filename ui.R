@@ -53,11 +53,11 @@ shinyUI(fluidPage(
 		champion,	rank,	role,	lane,	item0, item1, item2, item3, item4, item5, item6,
 		and winner")),
 		p("'RequestDataPost.csv'- 5.14 data for 5x5 Normal in 'NA' server, same attributes as above"),
-		p("'championMapping.csv'- champion data, including champion ID, champion name, and
-		whether it is AD or AP (a crude methodology was applied for this categorization-
+		p("'championMapping.csv'- champion data, including", em("champion ID, champion name, and
+		APAD")) (a crude methodology was applied for this categorization-
 		all champions with 'mage' in its 'tags' attribute were considered AP, all others AD.
 		This categorizes champions like Kayle as AD, which is not optimal)"),
-		p("'itemMapping.csv'- item data, including item ID and item name"),
+		p("'itemMapping.csv'- item data, including", em("item ID and item name")),
 
 		h4("3. Test Description"),
 		p("To answer this question regarding item diversity, we need to first come up with a definition. 

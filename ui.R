@@ -75,8 +75,8 @@ shinyUI(fluidPage(
 		p("Using these scaled item frequencies, plots and statistical measure can be generated to answer the question
 		of item diversity. In addition to the plot of item frequency, two statistical measure were used.
 		Firstly, the variance of the item frequency distribution of a particular champion may suggest how diverse or specialized a champion's item choice is."),  
-withMathJax("$$\\text{Variance of }Y=E[(Y-\mu)^2]$$"),
-"A smaller variance
+		withMathJax("$$\\text{Variance of }Y=E[(Y-\\mu)^2]$$"),
+		"A smaller variance
 		would indicate that the items are closer to the mean, more uniformly distributed, and thus more diverse. The 
 		second measurement used is the Chi-squared test for independence. The test is aimed to determine whether two samples
 		populations come from the same discrete distribution. The null hypothesis is that the two distributions 

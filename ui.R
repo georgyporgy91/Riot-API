@@ -74,18 +74,19 @@ shinyUI(fluidPage(
 		all scaled item frequencies is thus 1."),
 		p("Using these scaled item frequencies, plots and statistical measure can be generated to answer the question
 		of item diversity. In addition to the plot of item frequency, two statistical measure were used.
-		Firstly, the variance of the item frequency distribution of a particular champion may suggest how diverse or specialized a champion's item choice is."),  
-		withMathJax("$$\\text{Variance of }Y=E[(Y-\\mu)^2]$$"),
-		"A smaller variance
-		would indicate that the items are closer to the mean, more uniformly distributed, and thus more diverse. The 
-		second measurement used is the Chi-squared test for independence. The test is aimed to determine whether two samples
+		Firstly, the variance of the item frequency distribution of a particular champion may suggest how diverse or specialized a champion's item choice is.
+		A smaller variance would indicate that the frequencies of the items are closer to the mean across all items, 
+		suggesting a more uniformed distribution, and thus more diversity. Conversely, a large variance normally happens 
+		where a few items have extremely high frequency, while the remaining items barely appear. This leads to a large difference
+		between the each item frequency and the mean frequency, contributing to a larger variance.
+		The second measurement used is the Chi-squared test for independence. The test is aimed to determine whether two samples
 		populations come from the same discrete distribution. The null hypothesis is that the two distributions 
-		are independent. Hence, we expect the variance of patch 5.14 item distribution to be lower, and that the 
+		are independent. Hence, if the patch was successful, then we would expect the variance of patch 5.14 item distribution to be lower, and that the 
 		chi-square statistics to fail to reject the null of independent distribution."),
 		
 
 		h4("4. Results"),
-		p("The following table displays the variance difference between the item distributions before and after
+		p("The following table displays the relative variance difference (varDiff) between the item distributions before and after
 		the patch, as well as the p-value generated from the chi-squared test. (Empty cells were for champions that 
 		had 0 observations due to bad data)"),
 		

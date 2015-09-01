@@ -54,7 +54,7 @@ shinyUI(fluidPage(
 		and winner")),
 		p("'RequestDataPost.csv'- 5.14 data for 5x5 Normal in 'NA' server, same attributes as above"),
 		p("'championMapping.csv'- champion data, including", em("champion ID, champion name, and
-		APAD")) (a crude methodology was applied for this categorization-
+		APAD"), "(a crude methodology was applied for this categorization-
 		all champions with 'mage' in its 'tags' attribute were considered AP, all others AD.
 		This categorizes champions like Kayle as AD, which is not optimal)"),
 		p("'itemMapping.csv'- item data, including", em("item ID and item name")),

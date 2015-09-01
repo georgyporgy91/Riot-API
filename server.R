@@ -256,6 +256,8 @@ shinyServer(
 			pval <- chiStat$p.value
 			
 			summaryTable[i,] <- c(championList[i], varDiff, pval)
+		} else {
+		summaryTable[i,] <- c(championList[i], 0, 0)
 		}
 	}
 	summaryTable$varDiff <- as.numeric(summaryTable$varDiff)

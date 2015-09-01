@@ -88,8 +88,7 @@ shinyUI(fluidPage(
 
 		h4("4. Results"),
 		p("The following table displays the relative variance difference (varDiff) between the item distributions before and after
-		the patch, as well as the p-value generated from the chi-squared test. (Empty cells were for champions that 
-		had 0 observations due to bad data)"),
+		the patch, as well as the p-value generated from the chi-squared test. (Note that a few champions display 0 for varDiff and p-value due to missing data)"),
 		
 		tableOutput("summary"),
 		

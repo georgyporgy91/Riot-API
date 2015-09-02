@@ -99,16 +99,16 @@ shinyUI(fluidPage(
 		items for champions like Ahri, since we wouldn't expect the change in AP items to cause any impact to the AD items, especially
 		for AP champions. Hence by looking at a more restricted set of items, the chi-square test could offer more value."),
 
-		p("The table below shows a breakdown of the champion variance differences by AP/AD champions and positive/negative difference.
-		We observe that in general more champions actually increased in item specialization, since overall there were more 
-		positive varDiffs than negative varDiffs. Furthermore, AP champions seem to be evenly split in terms of 
-		item specialization vs. item diversification (20% vs. 21%)"),
+		p("The table below shows a breakdown of the champion variance differences by AP/AD champions and positive/negative variance difference.
+		We observe that there were slightly more champions that experienced negative varDiffs than positive varDiffs (51% vs. 47%), 
+		indicating a bias towards item diversification. However, the margin is so small that it could arise from random chance. Furthermore, the argument breaks down when we look at the cut by AP/AD type, since most of the 4% difference actually come from AD champions (30% vs. 27%), while AP champions experienced roughly the same change to variance in item frequency distribution (21% vs. 20%)."),
 		
 		tableOutput("summary2"),
 
-		p("Finally, the following table demonstrates the average varDiff per breakdown of population by AP/AD champions and pos/neg varDiff.
-		It appears that, again, there was no significant item diversification, given that for AP champions, the mean of negative varDiff  
-		was equal to that of positive varDiff in absolute value. In fact positive varDiff actually has a fatter tail (distribution not shown)"),
+		p("One may raise the possibility of, even though frequency wise negative varDiff may be similar to positive varDiff, the magnitude of these variance differences may be different. If negative varDiffs are more 'negative', then it could still imply item diversification."),
+		p("The following table displays the median varDiff breakdown by AP/AD champions and positive/negative varDiff.
+		It appears that, again, there was no significant item diversification, given that the magnitude of total median negative varDiff is roughly the same as that of positive varDiff (0.12 vs 0.13). Breaking it down specifically for AP champions, the median of negative varDiff  
+		is still similar to that of positive varDiff (0.06 vs 0.06). In fact for AP champions, positive varDiff actually has a fatter tail than  negative varDiff (distribution not shown), indicating that there were more cases of extreme item specialization than extreme item diversification."),
 
 		tableOutput("summary3"),
 

@@ -274,14 +274,14 @@ shinyServer(
 	result2 <- nrow(result[(result$varDiff < 0 & result$APAD=="AD"),])/nrow(result)
 	result3 <- nrow(result[(result$varDiff > 0 & result$APAD=="AP"),])/nrow(result)
 	result4 <- nrow(result[(result$varDiff > 0 & result$APAD=="AD"),])/nrow(result)
-	summaryTable2 <- data.frame(AP=c(result1, result3), AD=c(result2, result4), Total=c(result1+result3, result2+result4))
+	summaryTable2 <- data.frame(AP=c(result1, result3), AD=c(result2, result4), Total=c(result1+result2, result3+result4))
 	row.names(summaryTable2) <- c("varDiff<0", "varDiff>0")
 
 	med1 <- median(result[(result$varDiff < 0) & (result$APAD=="AP"),]$varDiff, na.rm=TRUE)
 	med2 <- median(result[(result$varDiff < 0) & (result$APAD=="AD"),]$varDiff, na.rm=TRUE)
 	med3 <- median(result[(result$varDiff > 0) & (result$APAD=="AP"),]$varDiff, na.rm=TRUE)
 	med4 <- median(result[(result$varDiff > 0) & (result$APAD=="AD"),]$varDiff, na.rm=TRUE)
-	summaryTable3 <- data.frame(AP=c(med1, med3), AD=c(med2, med4), Total=c(med1+med3, med2+med4))
+	summaryTable3 <- data.frame(AP=c(med1, med3), AD=c(med2, med4), Total=c(med1+med2, med3+med4))
 	row.names(summaryTable3) <- c("varDiff<0", "varDiff>0")
 
 	output$summary2 <- renderTable({
